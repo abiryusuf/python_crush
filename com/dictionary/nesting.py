@@ -5,3 +5,10 @@ for alien in range(30):
 
 for alien in aliens[:5]:
     print(alien)
+
+# A list in dictionary
+pizza = {
+    'crust': 'thick',
+    'topping': ['mushrooms', 'extra chess', 'chicken']
+}
+print("I ordered a " + pizza['crust'] + '- crust pizza')
