@@ -12,3 +12,22 @@ pizza = {
     'topping': ['mushrooms', 'extra chess', 'chicken']
 }
 print("I ordered a " + pizza['crust'] + '- crust pizza')
+
+for topping in pizza['topping']:
+    if topping == 'mushrooms':
+        print('\t' + topping)
+
+# find the name with domain
+email_list = {
+    'gmail.com': ['abir.yusuf', 'mim.montaha', 'clark.kent'],
+    'yahoo.com': ['barbara.gordon', 'jean.grey'],
+    'hotmail.com': ['bruce.wayne']
+}
+
+for gmail, name in email_list:
+    email = []
+    for names in name:
+        email.append(names + '@' + gmail)
+        print(email)
+
+    print("\t" + gmail)
