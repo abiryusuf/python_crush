@@ -34,3 +34,26 @@ for domain, emails in email_list.items():
 #         print(email)
 #
 #     print("\t" + gmail)
+
+# A dictionary in a dictionary
+# A dictionary in a dictionary
+user = {
+    'abiryusuf': {
+        'first': 'abir',
+        'last': 'yusuf',
+        'location': 'NY'
+
+    },
+    'mimmontaha': {
+        'first': 'mim',
+        'last': 'madiha',
+        'location': 'Bangladesh'
+    },
+}
+
+for username, user_info in user.items():
+    print('\nUsername: ' + username)
+    fullName = user_info['first'] + ' ' + user_info['last']
+    location = user_info['location']
+    print('\tFull name: ' + fullName.title())
+    print('\tLocation: ' + location.title())
