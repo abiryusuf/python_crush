@@ -52,8 +52,9 @@ user = {
 }
 
 for username, user_info in user.items():
-    print('\nUsername: ' + username)
-    fullName = user_info['first'] + ' ' + user_info['last']
-    location = user_info['location']
-    print('\tFull name: ' + fullName.title())
-    print('\tLocation: ' + location.title())
+    for usernames in username:
+        print('\nUsername: ' + username)
+        fullName = user_info['first'] + ' ' + user_info['last']
+        location = user_info['location']
+        print('\tFull name: ' + fullName.title())
+        print('\tLocation: ' + location.title())
