@@ -73,8 +73,8 @@ print(x)
 def build_person(f_name, l_name, age=''):
     """Return a dictionary of information about a person"""
     person = {
-        'first':f_name.title(),
-        'last':l_name.title()
+        'first': f_name.title(),
+        'last': l_name.title()
     }
     if age:
         person['age'] = age
@@ -84,3 +84,22 @@ print(u)
 z = build_person('mim', 'monira', 4)
 print(z)
 
+
+def get_full_name(first_name, last_name):
+    fullName = first_name + " " + last_name
+    return fullName.title()
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+
+    f_name = input("First Name: ")
+    if f_name == 'q':
+        break
+
+    l_name = input("Last Name: ")
+    if l_name == 'q':
+        break
+
+
+x = get_full_name(f_name, l_name)
+print("\nHello, " + x)
