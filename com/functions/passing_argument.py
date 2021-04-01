@@ -11,3 +11,36 @@ def make_pizza(*toppings):
 make_pizza("chess")
 make_pizza("x", 'y', 'c')
 
+# Using arbitrary keyword argument
+
+def build_profile(first, last, **user_info):
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+user = build_profile('abir', 'yusuf',
+                     locationn='NY', country="Bangladesh")
+print(user)
+
+# try it
+def list_sandwich(*sandwich):
+    print("\n The sandwiches orders: ")
+    for san in sandwich:
+        print("- " + san)
+list_sandwich("a")
+list_sandwich('chess', 'D')
+list_sandwich("a",'v', 'c')
+
+def user_info(**user_detelies):
+    profiles = {}
+    # profiles['first_Name'] = fname
+    # profiles['last_Name'] = lname
+    for k, v in user_detelies.items():
+        profiles[k] = v
+    return profiles
+x = user_info(county='USA', City='NY')
+print(x)
+
+
