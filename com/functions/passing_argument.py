@@ -33,14 +33,24 @@ list_sandwich("a")
 list_sandwich('chess', 'D')
 list_sandwich("a",'v', 'c')
 
-def user_info(**user_detelies):
+def user_info(fname, lname, **user_detelies):
     profiles = {}
-    # profiles['first_Name'] = fname
-    # profiles['last_Name'] = lname
+    profiles['first_Name'] = fname
+    profiles['last_Name'] = lname
     for k, v in user_detelies.items():
         profiles[k] = v
     return profiles
-x = user_info(county='USA', City='NY')
+x = user_info('avir', 'yusuf', county='USA', City='NY')
 print(x)
+
+def make_car(manufacture, model, **car_info):
+    car = {}
+    car['car_name'] = manufacture
+    car['car_model'] = model
+    for k, v in car_info.items():
+        car[k] = v
+    return car
+y = make_car('Honda', 'Accord', color='Black', tow_package=True)
+print(y)
 
 
