@@ -4,3 +4,24 @@
 
 names = ['abir', 'yusuf', 'mim']
 print(len(names))
+
+# add new name end of the list
+names.append("madiha")
+print(names)
+
+# insert the name based on the index number
+names.insert(0, "munni")
+print(names)
+
+# removing the names from list
+del names[0]
+print(names)
+
+# range
+
+# index
+y = names[0].title()
+print(y)
+
+for name in names:
+    print('\nMy name is ' + name.title())
