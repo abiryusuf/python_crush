@@ -11,3 +11,8 @@ colors = ['red', 'black', 'white', 'green']
 #     print(names)
 
 
+# With break statement we can stop loop before it has looped through the all item
+for color in colors:
+    if color == 'white':
+        break
+    print("Break " + str(color))
