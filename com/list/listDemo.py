@@ -10,8 +10,8 @@ names = ['abir', 'yusuf', 'mim']
 # print(names)
 
 # insert the name based on the index number
-# names.insert(0, "munni")
-# print(names)
+names.insert(0, "munni")
+print(names)
 
 # removing the names from list
 # del names[0]
@@ -20,7 +20,7 @@ names = ['abir', 'yusuf', 'mim']
 # sort, the method follow the alphabetically order
 names.sort()
 print(names)
-# or
+# or reverse the list
 names.sort(reverse=True)
 print(names)
 
