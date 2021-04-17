@@ -5,9 +5,9 @@
 names = ['abir', 'yusuf', 'mim']
 # print(len(names))
 
-names.reverse()
-print("Reverse the list: ")
-print(names)
+# names.reverse()
+# print("Reverse the list: ")
+# print(names)
 
 # add new name end of the list
 # names.append("madiha")
@@ -42,10 +42,9 @@ print(names)
 
 # index
 # y = names[0].title()
-# print(y)
-
-# for name in names:
-#     print('\nMy name is ' + name.title())
+# print
+# -1 always return the last item
+# print(names[-1].title())
 
 # TRY IT
 # places = ['New York', 'Bangladesh', 'Switzerland', 'Paris', 'Denmark']
@@ -56,5 +55,11 @@ print(names)
 # print("\nHere is the original list:")
 # print(places)
 
-places.reverse()
-print(places)
+# places.reverse()
+# print(places)
+
+# loop
+for name in names:
+    print("\nMy name is " + name.title())
+# This loop will execute only once
+print("Thank You, Everyone")
