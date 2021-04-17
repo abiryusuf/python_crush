@@ -21,3 +21,14 @@ char = 0
 for animal in animals:
     char += len(animal)
     print("Total character: {}, Average length {}".format(char, char/len(animal)))
+
+
+Numbers = [90, 88, 95, 78]
+sum1 = 0
+length = 0
+for number in Numbers:
+    sum1 += number
+    length += 1
+print("Total: " + str(sum1) + " - Average " + str(sum1/length))
+
+
