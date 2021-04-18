@@ -63,3 +63,11 @@ for name in names:
     print("\nMy name is " + name.title())
 # This loop will execute only once
 print("Thank You, Everyone")
+
+firstItems = ['banana', 'apple', 'oranges']
+secondItems = ['red', 'black', 'green']
+firstItems.extend(secondItems)
+print(firstItems)
+
+# range
+print(firstItems[:2])
