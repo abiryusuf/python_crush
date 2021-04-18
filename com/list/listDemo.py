@@ -3,6 +3,10 @@
 # list is a collection which is ordered and changeable. And allow the duplicates values
 
 names = ['abir', 'yusuf', 'mim']
+
+# need to print the list with index
+for index, name in enumerate(names):
+    print("{} - {}".format(index + 1, name))
 # print(len(names))
 
 # names.reverse()
