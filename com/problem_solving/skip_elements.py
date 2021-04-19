@@ -10,3 +10,12 @@ def skip_elements(elements):
     return new_items
 
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']))
+
+def skip_elements_two(elements):
+    ele = []
+    for index, element in enumerate(elements):
+        if index % 2 == 0:
+            ele.append("{}".format(element))
+    return ele
+
+print(skip_elements_two("a", "b", "c", "d"))
