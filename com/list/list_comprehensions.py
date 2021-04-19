@@ -32,4 +32,13 @@ for index, language in enumerate(languages):
 
 
 
+num = []
+def number(n):
+    for number in range(1, n + 1):
+        num.append(number * 2)
+    return num
+print(number(10))
+
+add = [x + 2 for x in range(1, 10)]
+print(add)
 

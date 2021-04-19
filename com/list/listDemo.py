@@ -26,8 +26,8 @@ for index, name in enumerate(names):
 # print(names)
 
 # # sort, the method follow the alphabetically order
-# names.sort()
-# print(names)
+names.sort()
+print("Sort" + str(names))
 
 # or reverse the list
 # names.sort(reverse=True)
