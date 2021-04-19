@@ -18,3 +18,24 @@ print(file_size(('Class Assignment', 'docx', 17875)))
 # with two digits after the decimal dot.
 # The colon acts as a separator from the field name, if you had specified one
 
+languages = ['Python', 'C', 'C++', 'Java']
+for i, language in enumerate(languages):
+    print("{} - {}".format(i+1, language))
+
+
+animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+
+char = 0
+
+for animal in animals:
+    char += len(animal)
+    print("Total characters: {}, Average: {}".format(char, char/len(animal)))
+
+def skip_elements(elements):
+    ele = []
+    for index, element in enumerate(elements):
+        if index % 2 == 0:
+            ele.append("{}".format(element))
+    return ele
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']))
+
