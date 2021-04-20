@@ -39,3 +39,10 @@ def skip_elements(elements):
     return ele
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']))
 
+tuple1 = ((1, 'a'), (4, 'c'), (2, 'd'), (3, "e"))
+print(sorted(tuple1))
+
+# now I want to sorted 2n items
+# use the key function
+
+
