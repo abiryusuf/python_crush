@@ -42,7 +42,10 @@ print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach']))
 tuple1 = ((1, 'a'), (4, 'c'), (2, 'd'), (3, "e"))
 print(sorted(tuple1))
 
-# now I want to sorted 2n items
+# now I want to sorted by 2nd items
 # use the key function
 
-
+def secondItems(element):
+    # retrieve the 2nd item
+    return element[1]
+print(sorted(tuple1, key=secondItems))

@@ -9,6 +9,20 @@ def anagram(str1, str2):
 
 print(anagram("abir", "yusuf"))
 
+# 2nd ways anagrams
+def anagreamsSecound(s1, s2):
+    # remove space and lower case
+    String1 = s1.replace(" ", "").lower()
+    r = sorted(String1)
+    String2 = s2.replace(" ", "").lower()
+    y = sorted(String2)
+    if r == y:
+        return True
+    else:
+        return False
+print(anagreamsSecound("I am abir", "I am yusuf"))
+
+
 # str1 = input("String1")
 # str2 = input("String2")
 
@@ -26,4 +40,35 @@ print("\nHere is the original list again")
 print(names)
 
 print(sorted(names, reverse=True))
+
+# 3rd anagram
+def thirdAnagram(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+
+    # check if same number of letters
+    if len(s1) != len(s2):
+        return False
+    # count frequency of each letter
+    count = {}
+
+    for letter in s1:  # for ever letter in first string
+        if letter in count:     # if letter in already in dictionary then
+            count[letter] += 1  # add 1 to that letter key
+        else:
+            count[letter] = 1
+# do reverse for 2nd string
+    for letter in s2:
+        if letter in count:
+            count[letter] -= 1
+        else:
+            count[letter] = 1
+
+    for k in count:     # every letter has to be 0 before count
+        if count[k] == 0:
+            return True
+    return False
+x = thirdAnagram("i am abir", "I am abir")
+print(x)
+
 
