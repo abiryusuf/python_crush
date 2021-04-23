@@ -20,26 +20,7 @@ def anagreamsSecound(s1, s2):
         return True
     else:
         return False
-print(anagreamsSecound("I am abir", "I am yusuf"))
-
-
-# str1 = input("String1")
-# str2 = input("String2")
-
-# sorted_str1 = sorted(str1)
-# sorted_str2 = sorted(str2)
-
-names = ["abir", "yusuf", "mim"]
-print("Here is the original list")
-print(names)
-
-print("\nHere is the sorted list")
-print(sorted(names))
-
-print("\nHere is the original list again")
-print(names)
-
-print(sorted(names, reverse=True))
+print(anagreamsSecound("abir", "yusuf"))
 
 # 3rd anagram
 def thirdAnagram(s1, s2):
@@ -68,6 +49,24 @@ def thirdAnagram(s1, s2):
         if count[k] == 0:
             return True
     return False
+# str1 = input("String1")
+# str2 = input("String2")
+
+# sorted_str1 = sorted(str1)
+# sorted_str2 = sorted(str2)
+
+names = ["abir", "yusuf", "mim"]
+print("Here is the original list")
+print(names)
+
+print("\nHere is the sorted list")
+print(sorted(names))
+
+print("\nHere is the original list again")
+print(names)
+
+print(sorted(names, reverse=True))
+
 x = thirdAnagram("i am abir", "I am abir")
 print(x)
 
