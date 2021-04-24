@@ -1,30 +1,20 @@
+# Dictionaries are used to store data in key : value paries
+# It doesn't allow the duplicate values and it changeable
+
 info = {
-    'name': 'abir',
-    'age': 32,
-    'place': 'NT'
+    "Name": "Abir",
+    "Age": 32,
+    "Address": "NY"
 }
 print(info)
-info['email'] = 'abir.com'
 
-print(info)
+# index
+x = info["Name"]
+print(x)
 
-file_counts = {"jpg": 10, "text": 14, "csv": 2, "py": 23}
-print(file_counts.items())
+# check with key
+y = "Name" in info
+print(y)
 
-# for key in file_counts.keys():
-#     print(key)
-
-for keys, values in file_counts.items():
-    print('THere are {} files with the {}'.format(keys, values))
-
-sentence = 'I am abir'
-def count_letter(text):
-    result = {}
-    for letter in text:
-        if letter not in result:
-            result[letter] = 0
-        result[letter] += 1
-    return result
-print(count_letter(sentence))
-
+doc = {"Introduction": 1, "Chapter 1": 4, "Chapter 2": 11, "Chapter 3": 25, "Chapter 4": 30}
 
