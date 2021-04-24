@@ -67,3 +67,12 @@ print(count_letter("I am abir"))
 #     return res
 #
 # print(count_letter("I am abir"))
+
+# range
+aliens = []
+for alien in range(20):
+    new_aliens = {"color": "Green", "point": 4, "Speed": "slow"}
+    aliens.append(new_aliens)
+
+for alien in aliens[:5]:
+    print(alien)
