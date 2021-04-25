@@ -76,3 +76,14 @@ for alien in range(20):
 
 for alien in aliens[:10]:
     print(alien)
+
+email_list = {
+    'gmail.com': ['abir.yusuf', 'mim.montaha', 'clark.kent'],
+    'yahoo.com': ['barbara.gordon', 'jean.grey'],
+    'hotmail.com': ['bruce.wayne']
+}
+
+for domain, emails in email_list.items():
+    print("\n" + domain.title() + "is related with: ")
+    for email in emails:
+        print(email.title())
