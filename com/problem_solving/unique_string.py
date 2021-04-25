@@ -10,7 +10,8 @@ def unique_string(string):
     return True
 
 def unique(string):
-   str = string.replace(" ", "")
-   return len(set(string)) == len(string)
+    str = string.replace(" ", "")
+    return len(set(str)) == len(str)
 
-print(unique('a b def'))
+print(unique('a b c d d'))
+print(unique_string(" a b c d d"))
