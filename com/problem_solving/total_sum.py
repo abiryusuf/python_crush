@@ -17,3 +17,19 @@ print(largestNum([3, 7, 8, -8, 10]))
 #         sum += i
 #     return sum
 # print(sum(5))
+
+def add_price(basket):
+    total = 0
+    for item in basket:
+        total += basket[item]
+    return round(total, 2)
+
+groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+
+print(add_price(groceries))
+
+for item, price in groceries.items():
+    print("Item {} and Price {}".format(item, price))
+
+
+
