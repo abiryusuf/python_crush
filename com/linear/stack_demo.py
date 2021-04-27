@@ -10,10 +10,12 @@ class Stack(object):
 
     def isEmpty(self):
         return self.items == []
+
 # push(item) adds a new item to the top of the linear. it needs the item and return nothing
 
     def push(self, item):
         self.items.append(item)
+
 # pop() removes the top item from the linear. It needs no parameters and return the nothing
 
     def pop(self):
@@ -21,10 +23,12 @@ class Stack(object):
 # peek() return the top item from the linear but does not remove it. It needs no parameters.
 
     def peek(self):
-        return self.items[len(self.items) - 1]
+        return self.items[len(self.items)-1]
 
     def size(self):
         return len(self.items)
+
+
 
 s = Stack()
 

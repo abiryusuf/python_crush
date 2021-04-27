@@ -17,7 +17,7 @@ class Queue(object):
 # enqueue(items) adds a new item to the rear of the queue. It needs the item and returns nothing
 
     def enqueue(self, item):
-        return self.items.insert(0, item)
+        self.items.insert(0, item)
 # dequeue() removes the front item from the queue. it needs no parameters and returns the items
 
     def dequeue(self):
