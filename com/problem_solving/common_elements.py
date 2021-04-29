@@ -8,7 +8,7 @@ def common_element(a, b):
 
     while num1 < len(a) and num2 < len(b):
         if a[num1] == b[num2]:
-            result.append(a[num1])
+            result.append(a[num1]) and result.append(b[num2])
             num1 += 1
             num2 += 1
         elif a[num1] > b[num2]:

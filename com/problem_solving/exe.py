@@ -1,23 +1,22 @@
-# def plaindrom(str):
-#
-#     new_string = ""
-#     rev_string = ""
-#     for x in str:
-#         if x not in new_string and rev_string:
-#             new_string = new_string + x
-#             rev_string = x + rev_string
-#     if new_string == rev_string:
-#         return True
-#     return False
-# print(plaindrom("madam"))
+sen = "I am abir yusuf"
 
+def count_letter(text):
+    res = {}
 
-def reverseString(str):
-    str1 = str.replace(" ", "")
+    for letter in text:
+        if letter in res:
+            res[letter.lower()] += 1
+        else:
+            res[letter.lower()] = 1
+    return res
+
+print(count_letter(sen))
+
+def reverse(str):
+
     res = ""
-    for x in str1:
+    for x in str:
         if x not in res:
             res = x + res
     return res
-
-print(reverseString("abir yusuf"))
+print(reverse("abir yusuf"))

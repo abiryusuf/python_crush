@@ -32,9 +32,13 @@ q = Queue()
 r = q.size()
 print(r)
 
-print(q.isEmpty())
+q.enqueue(3)
 
-print(q.enqueue(4))
 
-print(q.isEmpty())
+print(q.y)
+
+print(q)
+
+
+
 
