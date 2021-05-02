@@ -42,22 +42,34 @@
 # print("Factorial " + str(x))
 
 #
-def total(n):
-    sum = 0
-    for value in n:
-        sum += n[value]
-    return round(sum, 2)
-groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
-number = [1, 2, 4, 5]
-x = total(groceries)
-print("Total Price " + str(x))
+# def total(n):
+#     sum = 0
+#     for value in n:
+#         sum += n[value]
+#     return round(sum, 2)
+# groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+# number = [1, 2, 4, 5]
+# x = total(groceries)
+# print("Total Price " + str(x))
+#
+# number = [1, 2, 4, 5]
+#
+# def sumNum(n):
+#     sum = 0
+#
+#     for x in n:
+#         sum += x
+#     return sum
+# print("Total {}".format(sumNum(number)))
 
-number = [1, 2, 4, 5]
-
-def sumNum(n):
-    sum = 0
-
+def palindrome(n):
+    str1 = ""
+    str2 = ""
     for x in n:
-        sum += x
-    return sum
-print("Total {}".format(sumNum(number)))
+        if x != "":
+            str1 += x
+            str2 = x + str2
+    if str1 == str2:
+        return True
+    return False
+print(palindrome("madam"))
