@@ -9,6 +9,6 @@ def count_letter(text):
         if letter not in result:
             result[letter.lower()] = 1
         else:
-            result[letter.lower] += 1
+            result[letter.lower()] += 1
     return result
 print(count_letter("This is the sentence"))

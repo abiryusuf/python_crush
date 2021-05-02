@@ -62,14 +62,30 @@
 #     return sum
 # print("Total {}".format(sumNum(number)))
 
-def palindrome(n):
-    str1 = ""
-    str2 = ""
-    for x in n:
-        if x != "":
-            str1 += x
-            str2 = x + str2
-    if str1 == str2:
-        return True
-    return False
-print(palindrome("madam"))
+# def palindrome(n):
+#     str1 = ""
+#     str2 = ""
+#     for x in n:
+#         if x != "":
+#             str1 += x
+#             str2 = x + str2
+#     if str1 == str2:
+#         return True
+#     return False
+# print(palindrome("madam"))
+
+def non_repeating(string):
+    str = string.replace(" ", "").lower()
+    count = {}
+    for x in str:
+        if x in count:
+            count[x] += 1
+        else:
+            count[x] = 1
+    for x in str:
+        if count[x] == 1:
+            return x
+    return None
+
+print(non_repeating("I am abir"))
+
