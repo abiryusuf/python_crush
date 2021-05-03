@@ -18,15 +18,14 @@
 # print(unique_string("a b c d"))
 
 def duplicate_value(num):
-
     seen = set()
-    uniq = []
+    unique = []
 
     for value in num:
         if value not in seen:
-            uniq.append(value)
+            unique.append(value)
             seen.add(value)
-    return uniq
+    return unique
 
 print(duplicate_value([1, 2, 2, 4, 3, 6, 6, 6]))
 
@@ -44,3 +43,17 @@ print(duplicate_value([1, 2, 2, 4, 3, 6, 6, 6]))
 #             seen[x] += 1
 #     return dup
 # print(value([1, 2, 2, 3, 3, 4]))
+
+str = "abbccdd"
+
+def unique_string(str):
+    chars = set()
+
+    for letter in str:
+        if letter in chars:
+            return False
+        else:
+            chars.add(letter)
+    return True
+print(unique_string("abca"))
+

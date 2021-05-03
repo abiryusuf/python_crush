@@ -89,3 +89,14 @@ def non_repeating(string):
 
 print(non_repeating("I am abir"))
 
+def count_letter(text):
+    text = text.replace(" ", "").lower()
+    count = {}
+
+    for letter in text:
+        if letter in count:
+            count[letter] += 1
+        else:
+            count[letter] = 1
+    return count
+print(count_letter("abir yusuf"))
