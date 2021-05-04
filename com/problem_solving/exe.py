@@ -74,29 +74,72 @@
 #     return False
 # print(palindrome("madam"))
 
-def non_repeating(string):
-    str = string.replace(" ", "").lower()
+# def non_repeating(string):
+#     str = string.replace(" ", "").lower()
+#     count = {}
+#     for x in str:
+#         if x in count:
+#             count[x] += 1
+#         else:
+#             count[x] = 1
+#     for x in str:
+#         if count[x] == 1:
+#             return x
+#     return None
+#
+# print(non_repeating("I am abir"))
+#
+# def count_letter(text):
+#     text = text.replace(" ", "").lower()
+#     count = {}
+#
+#     for letter in text:
+#         if letter in count:
+#             count[letter] += 1
+#         else:
+#             count[letter] = 1
+#     return count
+# print(count_letter("abir yusuf"))
+
+def anagram(s1, s2):
     count = {}
-    for x in str:
-        if x in count:
-            count[x] += 1
-        else:
-            count[x] = 1
-    for x in str:
-        if count[x] == 1:
-            return x
-    return None
 
-print(non_repeating("I am abir"))
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
 
-def count_letter(text):
-    text = text.replace(" ", "").lower()
-    count = {}
+    if len(s1) != len(s2):
+        return False
 
-    for letter in text:
+    for letter in s1:
         if letter in count:
             count[letter] += 1
         else:
             count[letter] = 1
-    return count
-print(count_letter("abir yusuf"))
+    # reverse
+    for letter in s2:
+        if letter in count:
+            count[letter] -= 1
+        else:
+            count[letter] = 1
+
+    for k in count:
+        if count[k] == 0:
+            return True
+    return False
+print(anagram("abir", "bira"))
+
+def palindrome(s):
+    new_string = ""
+    old_string = ""
+    res = ""
+
+    for letter in s:
+        if letter != res:
+            new_string += letter
+            old_string = letter + old_string
+    # print("new string {} - old_string {}".format(new_string, old_string))
+    # if new_string == old_string:
+    #         return True
+    # return False
+print(palindrome("abir"))
+

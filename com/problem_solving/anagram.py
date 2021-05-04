@@ -7,7 +7,7 @@ def anagram(str1, str2):
     else:
         return False
 
-print(anagram("abir", "yusuf"))
+print(anagram("abcd", "cdab"))
 
 # 2nd ways anagrams
 def anagreamsSecound(s1, s2):

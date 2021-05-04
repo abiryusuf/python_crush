@@ -19,4 +19,4 @@ def most_frequent(list):
 
     return max_item
 
-print(most_frequent([1,1,3,5,6,7,7,7,]))
+print(most_frequent([8, 8, 1, 1, 3, 5, 6, 7, 7]))

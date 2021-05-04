@@ -1,4 +1,5 @@
 '''
+
 Array pair sum
 Given an integer array, output all the unique paris that sum up to a
 specific value k
@@ -6,6 +7,7 @@ e.g pair_sum([1,3,2,2], 4)
 return 2 pairs :
 (1,3)
 (2,3)
+
 '''
 def pair_sum(array, k):
     if len(array) < 2:
