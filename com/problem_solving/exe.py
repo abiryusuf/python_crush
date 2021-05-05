@@ -143,3 +143,38 @@ def palindrome(s):
     # return False
 print(palindrome("abir"))
 
+# arr = ([1, 3, 2, 2, 5, -1], 4)
+# def pair_sum(arr, k):
+#     if len(arr) < 2:
+#         return "Too Small"
+#     seen = set()
+#     output = set()
+#
+#     for num in arr:
+#         target = k - num
+#         if target not in seen:
+#             seen.add(num)
+#         else:
+#             output.add((min(num, target), max((num, target))))
+#     print("\n".join(map(str, list(output))))
+#
+# print(pair_sum([1, 3, 4, 2, -1], 4))
+
+
+def linear_search(arr, size, item):
+
+    for x in range(0, size):
+        if arr[x] == item:
+            return x
+    return - 1
+arr = [1, 2, 4, 6, 7]
+size = len(arr)
+item = 6
+
+index = linear_search(arr, size, item)
+if index == -1:
+    print("item not found")
+else:
+    print("item is found", index)
+
+
