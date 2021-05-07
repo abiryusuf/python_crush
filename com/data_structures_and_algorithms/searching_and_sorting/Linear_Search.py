@@ -44,11 +44,13 @@ print(y)
 # Finding the smallest Value
 def findSmallest(theValues):
     length = len(theValues)
+    # Assume the first item is the smallest value
     smallest = theValues[0]
     for i in range(1, length):
         if theValues[i] < smallest:
             smallest = theValues[i]
     return smallest
+
 num = [3, 5, 6, 8, 2]
 print(findSmallest(num))
 

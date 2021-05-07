@@ -10,12 +10,12 @@ def linear_search(arr, size, item):  # arr = list, n = size, item = number from 
     return -1
 arr1 = [2, 3, 4, 5, 10]
 size = len(arr1)
-item = 9
+item = 4
 x = linear_search(arr1, size, item)
 if(x == -1):
     print("Item is not found")
 else:
-    print("Item is found")
+    print("Item is found", x)
 
 
 
