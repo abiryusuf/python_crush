@@ -1,7 +1,8 @@
 
 """
-main purpose the binary search is "dont need to execute the whole list to find the
+main purpose the binary search is "don't need to execute the whole list to find the
 target value, so it is save time
+we can divided low and high and find the mid 
 """
 pos = -1
 def binarySearch(value, target):
