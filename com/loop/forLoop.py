@@ -28,20 +28,20 @@ colors = ['red', 'black', 'white', 'green']
 # It is possible to specify the starting value by adding a parameter
 # for num in range(1, 10+2):
 #     print(num)
-
+#
 # def rang(n):
 #     for number in range(1, n + 1):
-#         return number
-# print((rang(10)))
+#         return n[number]
+# print((rang([2, 5, 6, 8, 9])))
 
 
-# for number in range(1, 10+1, 3):
+# for number in range(0, 10):
 #     print(number)
 
 # else
-for x in range(1, 10):
-    if x == 4:
-        continue
-    print(x)
-else:
-    print('DONE')
+# for x in range(1, 10):
+#     if x == 4:
+#         continue
+#     print(x)
+# else:
+#     print('DONE')
