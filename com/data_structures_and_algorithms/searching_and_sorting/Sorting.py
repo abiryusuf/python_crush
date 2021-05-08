@@ -24,11 +24,10 @@ def selectionSort(num):
             temp = num[i]
         num[i] = num[smallIndex]
         num[smallIndex] = temp
+    return num[smallIndex]
 
 
-selectionSort(arr)
-print(arr)
-
+arr = [3, 8, 5, 9, 6]
 
 print(selectionSort(arr))
 
