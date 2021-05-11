@@ -1,6 +1,6 @@
 
 """
-sequential search the item from list and loop will execute until find the target
+Sequential search the item from list and loop will execute until find the target
 if not found it will return -1
 
 Linear search: finding the phone number by searching in phone
