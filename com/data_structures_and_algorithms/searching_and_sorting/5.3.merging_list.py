@@ -31,7 +31,7 @@ arr2 = [4, 6, 3, 7]
 def common_elements(listA, listB):
     x = 0
     y = 0
-    newList = list()
+    newList = []
 
     while x < len(listA) and y < len(listB):
         if listA[x] == listB[y]:
@@ -43,4 +43,4 @@ def common_elements(listA, listB):
         else:
             y += 1
     return newList
-print(common_elements(arr1, arr2))
+print((common_elements([1, 3, 5, 7, 8], [3, 5, 7, 10])))
