@@ -1,7 +1,11 @@
 """
 A linear is an ordered collection of items where the addition of new items
- and the removal of existing items always takes place at the time same end
+and the removal of existing items always takes place at the time same end
 NOTE: last in - first out (LIFO)
+
+A stack is a data structure that stores a liner collection of items with access
+limited to a last-in first-out order
+
 """
 
 class Stack(object):
