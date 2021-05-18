@@ -52,3 +52,12 @@ print(s.size())
 print(s.isEmpty())
 
 print(s.pop())
+
+values = Stack()
+
+for i in range(16):
+    if i % 3 == 0:
+        values.push(i)
+        print(values)
+
+
