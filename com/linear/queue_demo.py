@@ -35,10 +35,7 @@ print(r)
 q.enqueue(3)
 
 
-print(q.y)
-
-print(q)
-
+q.enqueue(3, "red")
 
 
 
