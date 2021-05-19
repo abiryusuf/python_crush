@@ -31,4 +31,4 @@ class Queue2Stacks(object):
 q = Queue2Stacks()
 
 for i in range(5):
-    q.enqueue(i)
+    print(q.enqueue(i))
