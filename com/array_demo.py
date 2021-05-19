@@ -61,4 +61,26 @@ if x == -1:
 else:
     print("Item is found", x)
 
+# check balance
+
+def check_balance(s):
+    if len(s) % 2 == 0:
+        return True
+
+    stack = []
+    opening = set('([{')
+    matching = set([('(', ')'), ('[', ']'), ('{', '}')])
+
+    for parent in s:
+        if parent in opening:
+            stack.append(parent)
+        else:
+            if len(s) == 0:
+                return False
+            last_open = stack.pop()
+            if (last_open, parent) not in matching:
+                return False
+    return len(stack) == 0
+print(check_balance("()"))
+
 
