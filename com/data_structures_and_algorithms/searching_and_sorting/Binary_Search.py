@@ -36,6 +36,38 @@ if x == -1:
 else:
     print("Found", pos + 1)
 
+def recBinarySearch(target, value, first, last):
+    if first > last:
+        return False
+    else:
+        mid = (first + last) // 2
+        if value[mid] == target:
+            return True
+        elif target < value[mid]:
+            return recBinarySearch(target, value, first, mid - 1)
+        else:
+            return recBinarySearch(target, value, mid + 1, last)
+    return False
+
+# value = [3, 5, 6, 7, 10, 46, 50]
+# target = 6
+# first = 3
+# last = 50
+# y = recBinarySearch(target, value, first, last)
+# if y == -1:
+#     print("Not Found")
+# else:
+#     print("found")
+
+y = 2 ** 8
+print(y)
+
+def exp(x, n):
+    y = 1
+    for i in range(n):
+        y *= x
+    return y
+print(exp(8, 2))
 
 
 
