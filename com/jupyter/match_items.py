@@ -13,9 +13,10 @@ print(x)
 
 
 def match1(value, match):
-    length = len(value)
-    for i in range(0, length):
+    for i in value:
         if i == match:
             return True
     return False
 print(match1(items, 5))
+
+def liner(item, taget)
