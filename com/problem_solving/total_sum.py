@@ -32,7 +32,6 @@ for item, price in groceries.items():
     print("Item {} and Price {}".format(item, price))
 
 
-
 def maxNumber(num):
     max = [0]
 
@@ -40,7 +39,8 @@ def maxNumber(num):
         current = num[i]
         if current > max:
             max = current
-    return max
+
+    return str(max)
 x = maxNumber([3, 6, 8, -4, 10])
 print(str(x))
 
