@@ -78,3 +78,15 @@ print(b)
 
 a = 5
 print(a, b)
+number = [2, 2, 3, 3, 5, 6]
+def duplicate(num):
+    seen = set()
+    unique = []
+
+    for value in num:
+        if value not in seen:
+            unique.append(value)
+            seen.add(value)
+    return unique
+
+print(duplicate(number))
