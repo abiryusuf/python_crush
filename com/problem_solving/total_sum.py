@@ -33,10 +33,9 @@ for item, price in groceries.items():
 
 
 def maxNumber(num):
-    max = [0]
+    max = 0
 
-    for i in num:
-        current = num[i]
+    for current in num:
         if current > max:
             max = current
 
