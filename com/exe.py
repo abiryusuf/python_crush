@@ -64,3 +64,17 @@ def countVowels(str):
 print(countVowels("abir yUsuf"))
 
 
+a = 1
+print(a)
+
+b = 2
+print(b)
+
+a = 3
+print(a)
+
+b = a
+print(b)
+
+a = 5
+print(a, b)
