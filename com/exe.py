@@ -64,29 +64,37 @@ def countVowels(str):
 print(countVowels("abir yUsuf"))
 
 
-a = 1
-print(a)
+groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99,
+ "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98,
+ "cheese": 5.44}
 
-b = 2
-print(b)
+number = [2, 5, 8, 9]
+def sum(num):
+    total = 0
+    for i in num:
+        total += num[i]
+    return round(total, 2)
+print(sum(groceries))
 
-a = 3
-print(a)
+def factorial(num):
+    res = 1
+    for i in range(1, num + 1):
+        res = res * i
+    return res
+print(factorial(5))
 
-b = a
-print(b)
+# for c in range(1, 6, 2):
+#     print(c)
 
-a = 5
-print(a, b)
-number = [2, 2, 3, 3, 5, 6]
-def duplicate(num):
-    seen = set()
-    unique = []
+def total(num):
+    sum = 0
 
-    for value in num:
-        if value not in seen:
-            unique.append(value)
-            seen.add(value)
-    return unique
+    for i in range(1, num + 1):
+        sum += i
+    return sum
+print(total(5))
 
-print(duplicate(number))
+num = [2, 5, 6]
+n = len(num)
+for i in range(n):
+    print(num[i])
