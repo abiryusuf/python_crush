@@ -97,4 +97,6 @@ print(total(5))
 num = [2, 5, 6]
 n = len(num)
 for i in range(n):
-    print(num[i])
+    x = num[i]
+    print(x)
+print(type(x))
