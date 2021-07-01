@@ -107,36 +107,15 @@
 #     return max
 # print(maxNum(num))
 
-arrList = [10, 11, 2, 4, 6, 8, 9]
-target = 4
+num = [3, 2, 1]
+def findMin(num):
+    length = len(num)
 
-def linearSearch(values, target):
-    length = len(values)
+    min = 0
 
-    for i in range(0, length):
-        if values[i] == target:
-            return i
-    return -1
-x = linearSearch(arrList, target)
-if x == -1:
-    print("Not found")
-else:
-    print("Item is found {}".format(x))
-y = arrList[3]
-print(y)
-
-def sortedLinear(value, target1):
-    value = sorted(value)
-    length = len(value)
-
-    for i in range(0, length):
-        if value[i] == target1:
-            return True
-        elif value[i] > target1:
-            return False
-    return False
-y = sortedLinear(arrList, target)
-if y == -1:
-    print("Not Found")
-else:
-    print("Found the item")
+    for i in range(length):
+        current = num[i]
+        if current < min:
+            min = current
+    return min
+print(findMin(num))
