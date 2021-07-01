@@ -110,10 +110,31 @@
 def anagram(str1, str2):
     string1 = str1.replace(" ", "").lower()
     string2 = str2.replace(" ", "").lower()
-    word1 = sorted(string1)
-    word2 = sorted(string2)
-    if word1 == word2:
-        return True
-    return False
 
-print(anagram("I am abr", "I am abir"))
+    # word1 = sorted(string1)
+    # word2 = sorted(string2)
+    # if word1 == word2:
+    #     return True
+    # return False
+
+    if len(string1) == len(string2):
+        return True
+    count = {}
+
+    for letter in string1:
+        if letter in count:
+            count[letter] += 1
+        else:
+            count[letter] = 1
+    for letter in string2:
+        if letter in count:
+            count[letter] -= 1
+        else:
+            count[letter] = 1
+
+    for k in count:
+        if count[k] == 0:
+            return True
+        return False
+
+print(anagram("I am abir", "I am abir"))
