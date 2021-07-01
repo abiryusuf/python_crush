@@ -138,3 +138,8 @@ def anagram(str1, str2):
         return False
 
 print(anagram("I am abir", "I am abir"))
+
+arr = [3, 5, 6, 8]
+
+if 10 in arr:
+    print(True)
