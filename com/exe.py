@@ -107,39 +107,36 @@
 #     return max
 # print(maxNum(num))
 
-def anagram(str1, str2):
-    string1 = str1.replace(" ", "").lower()
-    string2 = str2.replace(" ", "").lower()
+arrList = [10, 11, 2, 4, 6, 8, 9]
+target = 4
 
-    # word1 = sorted(string1)
-    # word2 = sorted(string2)
-    # if word1 == word2:
-    #     return True
-    # return False
+def linearSearch(values, target):
+    length = len(values)
 
-    if len(string1) == len(string2):
-        return True
-    count = {}
+    for i in range(0, length):
+        if values[i] == target:
+            return i
+    return -1
+x = linearSearch(arrList, target)
+if x == -1:
+    print("Not found")
+else:
+    print("Item is found {}".format(x))
+y = arrList[3]
+print(y)
 
-    for letter in string1:
-        if letter in count:
-            count[letter] += 1
-        else:
-            count[letter] = 1
-    for letter in string2:
-        if letter in count:
-            count[letter] -= 1
-        else:
-            count[letter] = 1
+def sortedLinear(value, target1):
+    value = sorted(value)
+    length = len(value)
 
-    for k in count:
-        if count[k] == 0:
+    for i in range(0, length):
+        if value[i] == target1:
             return True
-        return False
-
-print(anagram("I am abir", "I am abir"))
-
-arr = [3, 5, 6, 8]
-
-if 10 in arr:
-    print(True)
+        elif value[i] > target1:
+            return False
+    return False
+y = sortedLinear(arrList, target)
+if y == -1:
+    print("Not Found")
+else:
+    print("Found the item")
