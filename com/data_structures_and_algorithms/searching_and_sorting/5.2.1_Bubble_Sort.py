@@ -1,4 +1,10 @@
+"""
+Bubble Sort: Rearranges the value by iterating over the list multiple times, causing
+larger values to bubble to the top or end of the list.
 
+Main reasons is find the large value from end of the list
+Bubble sort needs two loops
+"""
 arr = [2, 5, 1, 3]
 x = sorted(arr)
 n = len(x)
