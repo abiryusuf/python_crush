@@ -10,3 +10,13 @@ winner = ['Abir', 'Yusuf', 'Mim', 'Madiha']
 
 for index, person in enumerate(winner):
     print("{}. - {}".format(index + 1, person))
+
+thisList = ["apple", "banana", "cherry"]
+
+theList = ["mango", "papaya"]
+
+thisList.extend(theList)
+print(thisList)
+
+thisList.pop()
+print(thisList)
