@@ -120,15 +120,14 @@
 #     return min
 # print(findMin(arrList))
 
-num = [5, 7, 8, 14, 11, 10]
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
 
+new_files = []
 
-num.sort()
-print(num)
-
-num.sort(reverse=True)
-print(num)
-
-thisList = ["apple", "banana", "cherry"]
-myList = thisList
-print(myList)
+for name in filenames:
+    if name.endswith(".hpp"):
+        name = name.replace(".hpp", ".h")
+        new_files.append(name)
+    else:
+        new_files.append(name)
+print(new_files)
