@@ -120,14 +120,18 @@
 #     return min
 # print(findMin(arrList))
 
-filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+#
+# new_files = []
+#
+# for name in filenames:
+#     if name.endswith(".hpp"):
+#         name = name.replace(".hpp", ".h")
+#         new_files.append(name)
+#     else:
+#         new_files.append(name)
+# print(new_files)
 
-new_files = []
+num = {4, 7, 2, 5, 5, 7}
+print(num)
 
-for name in filenames:
-    if name.endswith(".hpp"):
-        name = name.replace(".hpp", ".h")
-        new_files.append(name)
-    else:
-        new_files.append(name)
-print(new_files)

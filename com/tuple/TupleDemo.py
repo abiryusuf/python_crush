@@ -49,3 +49,7 @@ def secondItems(element):
     # retrieve the 2nd item
     return element[1]
 print(sorted(tuple1, key=secondItems))
+
+num = (3, 5, 6, 8)
+num.count()
+print(num)
