@@ -135,3 +135,24 @@
 num = {4, 7, 2, 5, 5, 7}
 print(num)
 
+info = {
+    "name": "abir",
+    "place": "NY",
+    "Age": 32,
+    "Age_1": 32
+}
+print(info)
+
+info["name"] = "Yusuf"
+info.update({"City": "Jamaica"})
+c = info.values()
+print(c)
+
+print(type(info))
+
+x = info.items()
+print(x)
+
+for inx, value in info.items():
+    print("Key {}, value {}".format(inx, value))
+

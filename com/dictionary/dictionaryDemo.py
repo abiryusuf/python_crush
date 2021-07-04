@@ -1,5 +1,5 @@
 # Dictionaries are used to store data in key : value paries
-# It doesn't allow the duplicate values and it changeable
+# It doesn't allow the duplicate values and it changeable, it means key can not be duplicate
 
 # info = {
 #     "Name": "Abir",
