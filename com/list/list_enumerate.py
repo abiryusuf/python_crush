@@ -20,3 +20,10 @@ print(thisList)
 
 thisList.pop()
 print(thisList)
+
+
+add = []
+
+for i in range(1, 20):
+    add.append(i - 2)
+print(add)

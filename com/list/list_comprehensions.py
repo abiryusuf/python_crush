@@ -42,3 +42,7 @@ print(number(10))
 add = [x + 2 for x in range(1, 10)]
 print(add)
 
+num = [5, 7, 8, 14, 11, 10]
+
+num.sort()
+print(num)

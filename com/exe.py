@@ -107,15 +107,28 @@
 #     return max
 # print(maxNum(num))
 
-arrList = [3, 20, 10, 5, 7, 8]
-def findMin(num):
-    length = len(num)
-    number = sorted(num)
+# arrList = [3, 20, 10, 5, 7, 8]
+# def findMin(num):
+#     length = len(num)
+#     number = sorted(num)
+#
+#     min = number[0]
+#
+#     for i in range(1, length):
+#         if number[i] < min:
+#             min = number[i]
+#     return min
+# print(findMin(arrList))
 
-    min = number[0]
+num = [5, 7, 8, 14, 11, 10]
 
-    for i in range(1, length):
-        if number[i] < min:
-            min = number[i]
-    return min
-print(findMin(arrList))
+
+num.sort()
+print(num)
+
+num.sort(reverse=True)
+print(num)
+
+thisList = ["apple", "banana", "cherry"]
+myList = thisList
+print(myList)
