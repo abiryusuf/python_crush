@@ -132,27 +132,42 @@
 #         new_files.append(name)
 # print(new_files)
 
-num = {4, 7, 2, 5, 5, 7}
-print(num)
+# arr = [4, 2, 6, 8, 1, 9]
+#
+# length = len(arr)
+# max = 0
+#
+# for i in range(1, length):
+#     if arr[i] > max:
+#         max = arr[i]
+# print(max)
+#
+# min = arr[0]
+# for i in range(1, length):
+#     arr[i]
+#     if arr[i] < min:
+#         min = arr[i]
+# print(min)
+# mul = 1
+# for i in range(1, length):
+#     arr[i]
+#     mul = mul * arr[i]
+# print(mul)
+#
+# x = 1
+# for i in range(1, 5 + 1):
+#     x = x * i
+# print(x)
+# swap
+a = 4
+b = 5
+x = a
+a = b
+b = x
 
-info = {
-    "name": "abir",
-    "place": "NY",
-    "Age": 32,
-    "Age_1": 32
-}
-print(info)
-
-info["name"] = "Yusuf"
-info.update({"City": "Jamaica"})
-c = info.values()
-print(c)
-
-print(type(info))
-
-x = info.items()
-print(x)
-
-for inx, value in info.items():
-    print("Key {}, value {}".format(inx, value))
+print(a, b)
+import math as x
+arr = [3, 5, 7, 8]
+print(x.fsum(arr))
+print(x.log(2))
 
