@@ -1,5 +1,5 @@
 
-fact = int("Enter Number: ")
+fact = int(input("Enter Number: "))
 
 def factorial(num):
     res = 1
