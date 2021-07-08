@@ -11,7 +11,7 @@ def rev_word(s):
                 i += 1
             words.append(s[start:i])
             i += 1
-     return ''.join(reversed(s))
+    return ''.join(reversed(s))
 
 print(rev_word("I am abir"))
 
