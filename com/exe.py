@@ -159,15 +159,25 @@
 #     x = x * i
 # print(x)
 # swap
-a = 4
-b = 5
-x = a
-a = b
-b = x
-
-print(a, b)
-import math as x
-arr = [3, 5, 7, 8]
-print(x.fsum(arr))
-print(x.log(2))
-
+# a = 4
+# b = 5
+# x = a
+# a = b
+# b = x
+#
+# print(a, b)
+# import math as x
+# arr = [3, 5, 7, 8]
+# print(x.fsum(arr))
+# print(x.log(2))
+ # x = int(input("Enter number: "))
+def ifElse(a, b):
+    if a > b:
+        return "A is greater than B"
+    elif a < b:
+        return "B is greater than A"
+    elif a == b:
+        return "A and B is equal"
+    else:
+        return "Nothing"
+print(ifElse(5, 5))

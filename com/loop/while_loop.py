@@ -1,7 +1,14 @@
 # execute the set of statements as long as condition is true
 
-i = 7
-while i < 6:
-    if i == 4:
-        break
-    print(i)
+
+
+x = "abir"
+y = ""
+z = ""
+for i in x:
+    y = i + y
+    z = z + i
+    if y == z:
+        print("It is plaindrome")
+    else:
+        print("It is not")

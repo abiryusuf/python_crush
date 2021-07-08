@@ -12,11 +12,3 @@ n = len(x)
 for i in range(1, n - 1):
     print(i)
 
-evenOdd = int(input("Enter the number: "))
-def EvenOdd(num):
-
-    if num % 2 == 0:
-        return "Even"
-    else:
-        return "odd"
-print(EvenOdd(evenOdd))
