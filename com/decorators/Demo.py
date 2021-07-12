@@ -17,4 +17,4 @@ def deco_Div(func):
 
 div_1 = deco_Div(div)
 
-div(2, 4)
+div_1(2, 4)
