@@ -24,6 +24,13 @@ print(thisList)
 
 add = []
 
-for i in range(1, 20):
-    add.append(i - 2)
-print(add)
+# for i in range(1, 20):
+#     add.append(i - 2)
+# print(add)
+
+def convertToDic(str):
+    str = str.split()
+
+    for inx, value in enumerate(str):
+        return "Index {} and value {}".format(inx, value)
+print(convertToDic("gfg*is*best*for*geeks"))
