@@ -13,3 +13,17 @@ def duplicate_value(num):
     return unique
 
 print(duplicate_value([1, 2, 2, 4, 3, 6, 6, 6]))
+
+info = "I am abir"
+
+print(len(info.split()))
+
+def countWord(str):
+    str = str.replace(" ", "").lower()
+    res = ""
+    for i in str:
+        if i not in res:
+            res += 1
+        return res
+print(countWord(info))
+

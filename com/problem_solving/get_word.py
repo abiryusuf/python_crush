@@ -1,7 +1,7 @@
 sentence = "I am abir"
 
-for letter in sentence:
-    print(letter)
+# for letter in sentence:
+#     print(letter)
 
 words = sentence.split()
 print(len(words))

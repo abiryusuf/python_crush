@@ -33,13 +33,25 @@ for item, price in groceries.items():
 
 
 def maxNumber(num):
-    max = 0
+    max = {}
 
-    for current in num:
+    for current in num.values():
         if current > max:
             max = current
 
     return str(max)
-x = maxNumber([3, 6, 8, -4, 10])
-print(str(x))
+print(maxNumber(groceries))
 
+theList = []
+result = 0
+newList = []
+
+for i in newList:
+    if i in theList:
+        result = max(result, theList[i])
+print(str(result))
+
+test_dict1 = {“Gfg” :20, “is” : 36, “best” : 100}, test_dict2 = {“Gfg2” : 26, “is2” : 20, “best2” : 70}
+def dict(list1, list2):
+    return list2.update(list1)
+print(dict())
