@@ -51,7 +51,6 @@ for i in newList:
         result = max(result, theList[i])
 print(str(result))
 
-test_dict1 = {“Gfg” :20, “is” : 36, “best” : 100}, test_dict2 = {“Gfg2” : 26, “is2” : 20, “best2” : 70}
 def dict(list1, list2):
     return list2.update(list1)
 print(dict())

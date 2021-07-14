@@ -25,6 +25,8 @@
 #     if i % 3 == 0 or i % 5 == 0:
 #         continue
 #     print(i)
+
+
 # Loop can not be empty but sometimes doesn't need loop with content
 # So, use the pass statement to avoid the error
 for i in range(1, 20):
