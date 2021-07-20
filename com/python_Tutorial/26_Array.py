@@ -6,19 +6,46 @@ same data type where list contains different data type
 import array as arr
 from array import *
 
-vals = array('i', [3, 5, 7, -2, 8])
+# vals = array('i', [3, 5, 7, -2, 8])
+#
+# for i, value in enumerate(vals):
+#     print("Key {} and value {}".format(i, value))
+#
+# for i in range(len(vals)):
+#     print(i)
+# vals.reverse()
+# print(vals[0])
+#
+# vals.append(10)
+# vals.remove(10)
+# print(vals)
+#
+# newArr = array(vals.typecode, (a*a for a in vals))
+# print(newArr)
 
-for i, value in enumerate(vals):
-    print("Key {} and value {}".format(i, value))
 
-for i in range(len(vals)):
-    print(i)
-vals.reverse()
-print(vals[0])
+# Search the array
 
-vals.append(10)
-vals.remove(10)
-print(vals)
+arr = array("i", [])
 
-newArr = array(vals.typecode, (a*a for a in vals))
-print(newArr)
+length = int(input("Enter the length of the array  "))
+
+for i in range(length):
+    x = int(input("Enter the next value: "))
+    arr.append(x)
+print(arr)
+
+# find the index from the array
+val = int(input("Enter the value "))
+
+count = 0
+
+for e in arr:
+    if e == val:
+        print(count)
+        break
+    count += 1
+
+
+
+
