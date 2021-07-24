@@ -6,6 +6,8 @@ def reverse_string(input_string):
     return result
 
 print(reverse_string("abir"))
+
+
 theList = [5, 7, 9]
 def reverseInt(num):
     res = []
@@ -15,4 +17,4 @@ def reverseInt(num):
         if i not in res:
             res = i + res
     return res
-print(reverseInt(theList))
+print(reverseInt(str(theList)))
