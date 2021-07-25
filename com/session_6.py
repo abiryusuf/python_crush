@@ -19,6 +19,20 @@ def largestNum(n):
     if len(n) == 0:
         return False
     max = n[0]
+
+    for i in range(1, size):
+        current = n[i]
+        if current > max:
+            max = current
+    return max
+print("Max number", largestNum(num))
+
+
+
+def minNum(n):
+    size = len(n)
+    if size == 0:
+        return False
     min = n[0]
 
     for i in range(1, size):
@@ -26,4 +40,20 @@ def largestNum(n):
         if current < min:
             min = current
     return min
-print(largestNum(num))
+print("Min number ", minNum(num))
+
+
+"""
+Python program to interchange first and last elements in a list
+"""
+
+def swapList(newList):
+    size = len(newList)
+
+    temp = newList[0]
+
+    newList[0] = newList[size - 1]
+    newList[size -1] = temp
+
+    return newList
+print(swapList(num))
