@@ -57,3 +57,12 @@ def swapList(newList):
 
     return newList
 print(swapList(num))
+
+def avereage(num):
+
+    sum = 0
+    size = len(num)
+    for i in range(size):
+        sum += i
+    return sum/size
+print(avereage(num))

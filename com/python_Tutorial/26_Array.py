@@ -27,25 +27,39 @@ from array import *
 # Search the array
 
 arr = array("i", [])
+#
+# length = int(input("Enter the length of the array  "))
+#
+# for i in range(length):
+#     x = int(input("Enter the next value: "))
+#     arr.append(x)
+# print(arr)
+#
+# # find the index from the array
+# val = int(input("Enter the value "))
+#
+# count = 0
+#
+# for e in arr:
+#     if e == val:
+#         print(count)
+#         break
+#     count += 1
 
-length = int(input("Enter the length of the array  "))
 
-for i in range(length):
-    x = int(input("Enter the next value: "))
-    arr.append(x)
-print(arr)
+arr_1 = []
 
-# find the index from the array
-val = int(input("Enter the value "))
+size = int(input("Enter the length of array  "))
 
-count = 0
+for i in range(size):
+    x = int(input("Enter the next value "))
+    arr_1.append(x)
+print(arr_1)
 
-for e in arr:
-    if e == val:
-        print(count)
+target = int(input("Inter the target value "))
+res = 0
+for i in arr_1:
+    if i == target:
+        print(res)
         break
-    count += 1
-
-
-
-
+    res += 1
