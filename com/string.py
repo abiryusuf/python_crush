@@ -40,9 +40,13 @@ def get_word(sentence, num):
 print(get_word(info, 3))
 
 def count_vowel(str):
-    size = len(str)
-    count = ""
-    for i in range(1, size):
+
+    count = 0
+    for i in str:
+        if i in "aeiou":
+            count += 1
+    return count
+print(count_vowel(info))
 
 
 
