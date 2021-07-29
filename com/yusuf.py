@@ -73,11 +73,3 @@
 #     return max - 1
 # print(secondHightst(theList))
 
-name = 'I am abir'
-name = name.replace(" ", "").lower()
-count = 0
-
-for i in range(1, len(name)):
-    if i == "aeiou":
-        count = i + 1
-print(count)
