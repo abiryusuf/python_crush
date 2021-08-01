@@ -8,7 +8,7 @@ for num in range(1, 10):
 print(multiple)
 
 # list comprehensions
-multiple = [x*2 for x in range(1, 10)]
+multiple = {x*2 for x in range(1, 10)}
 print(multiple)
 
 
@@ -46,3 +46,11 @@ num = [5, 7, 8, 14, 11, 10]
 
 num.sort()
 print(num)
+
+my_list = [2, 3, 5, 7, 11]
+
+squared_list = [x**2 for x in my_list]    # list comprehension
+# output => [4 , 9 , 25 , 49 , 121]
+
+squared_dict = {x:x**2 for x in my_list}    # dict comprehension
+# output => {11: 121, 2: 4 , 3: 9 , 5: 25 , 7: 49}

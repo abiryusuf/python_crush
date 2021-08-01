@@ -171,13 +171,24 @@
 # print(x.fsum(arr))
 # print(x.log(2))
  # x = int(input("Enter number: "))
-def ifElse(a, b):
-    if a > b:
-        return "A is greater than B"
-    elif a < b:
-        return "B is greater than A"
-    elif a == b:
-        return "A and B is equal"
-    else:
-        return "Nothing"
-print(ifElse(5, 5))
+# def ifElse(a, b):
+#     if a > b:
+#         return "A is greater than B"
+#     elif a < b:
+#         return "B is greater than A"
+#     elif a == b:
+#         return "A and B is equal"
+#     else:
+#         return "Nothing"
+# print(ifElse(5, 5))
+
+temp = 10 	 # global-scope variable
+
+def func():
+      global temp
+      temp = 20   # local-scope variable
+      print(temp)
+
+print(temp) 	 # output => 10
+func() 		 # output => 20
+print(temp) 	 # output => 20

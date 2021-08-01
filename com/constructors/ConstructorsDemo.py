@@ -32,11 +32,19 @@ class Con:
     def cal(self):
         self.answer = self.first + self.second - self.third
 
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+    def dis(self):
+        print("Name " + str(self.name))
+
 
 obj = Con(2, 5, 3)
 obj.firstName()
 obj.cal()
 obj.display()
-
+obj.dis()
 
 

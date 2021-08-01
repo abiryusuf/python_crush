@@ -59,3 +59,41 @@
 #     return sum
 # print(func([1, 2, 3, 4, 5, 6, 7, 8]))
 
+
+test_str = 'gfg*is*best*for*geeks'
+# out put: {0: 'gfg', 1: 'is', 2: 'best', 3: 'for', 4: 'geeks'}
+
+x = test_str.split("*")
+res = {}
+for i, value in enumerate(x):
+    res[i] = value
+print(res)
+
+# current_max = A[0]
+# global_max = A[0]
+# for i = 1 -> size of A
+#     if current_max is less than 0
+#         then current_max = A[i]
+#     otherwise
+#         current_max = current_max + A[i]
+#     if global_max is less than current_max
+#         then global_max = current_max
+
+def palindrome(str):
+    new_str = ""
+    old_str = ""
+    str = str.lower()
+
+    for i in str:
+        if i != "":
+            new_str = new_str + i
+            old_str = i + old_str
+    if new_str == old_str:
+        return True
+    return False
+print(palindrome("madam"))
+
+
+
+
+
