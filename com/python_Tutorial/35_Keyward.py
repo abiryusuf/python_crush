@@ -15,4 +15,4 @@ variable-length list.
 def info_1(**kwargs):
     for i, j in kwargs.items():
         print("\n", "%s == %s" % (i, j))
-info_1(first = 'I', mid = 'Am', last = 'Avir')
+info_1(first='I', mid='Am', last='Avir')

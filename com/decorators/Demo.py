@@ -1,6 +1,7 @@
 
 """
-Decorators: I can add or modify the extra features from exciting function
+Decorators: I can add or modify the extra features from exciting function without
+changing the structure of the function itself
 To wrap another function in order to extend the behavior of the wrapped function,
 without permanently modifying it.
 """

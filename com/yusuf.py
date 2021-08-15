@@ -73,3 +73,12 @@
 #     return max - 1
 # print(secondHightst(theList))
 
+def acronym(str):
+
+    str = str.split(" ")
+    res = ""
+
+    for i in str:
+        x = str[i]
+    return x
+print(acronym('abir'))

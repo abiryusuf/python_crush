@@ -52,5 +52,14 @@ my_list = [2, 3, 5, 7, 11]
 squared_list = [x**2 for x in my_list]    # list comprehension
 # output => [4 , 9 , 25 , 49 , 121]
 
-squared_dict = {x:x**2 for x in my_list}    # dict comprehension
+squared_dict = {x**2 for x in my_list}    # dict comprehension
 # output => {11: 121, 2: 4 , 3: 9 , 5: 25 , 7: 49}
+
+abc = [i + 2 for i in my_list]
+print(abc)
+
+xyz = {i: i * 2 for i in my_list}
+print(xyz)
+
+for i, value in enumerate(my_list):
+    print()

@@ -16,3 +16,6 @@ print(square_func(2))
 
 addFun = lambda a, b, c: a + b - c
 print(addFun(3, 4, 3))
+
+abir = lambda x, y: x - y
+print(abir(4, 2))

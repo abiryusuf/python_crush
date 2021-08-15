@@ -6,7 +6,7 @@ def fib(n):
         return 1
     else:
         return fib(n - 1) + fib(n - 2)
-for i in range(0, 12):
+for i in range(1, 5):
     print(fib(i))
 #     a = 0
 #     b = 1
@@ -23,6 +23,13 @@ for i in range(0, 12):
 #         return 1
 #     else:
 #         return fib(n - 1) + fib(n - 2)
-print(fib(10))
+# print(fib(10))
+
+#
+def func(n):
+    x = (n-1) + (n - 2)
+    return x
+print("func", func(10))
+
 
 

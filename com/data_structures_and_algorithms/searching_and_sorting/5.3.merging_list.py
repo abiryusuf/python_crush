@@ -9,7 +9,7 @@ def mergeSortedList(ListA, ListB):
     b = 0
     newList = list()
 
-    while a < len(ListA) and b < len(ListA):
+    while a < len(ListA) and b < len(ListB):
         if ListA[a] < ListB[b]:
             newList.append(ListA[a])
             a += 1
@@ -43,4 +43,4 @@ def common_elements(listA, listB):
         else:
             y += 1
     return newList
-print((common_elements([1, 3, 5, 7, 8], [3, 5, 7, 10])))
+print((common_elements(arr1, arr2)))

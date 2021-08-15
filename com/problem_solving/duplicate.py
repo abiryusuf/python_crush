@@ -22,8 +22,8 @@ def countWord(str):
     str = str.replace(" ", "").lower()
     res = ""
     for i in str:
-        if i not in res:
+        if i in res:
             res += 1
-        return res
+    return res
 print(countWord(info))
 
