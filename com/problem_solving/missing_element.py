@@ -1,13 +1,14 @@
-def finder(arr1, arr2):
-    arr1.sort()
-    arr2.sort()
+arr = [1, 4, 6, 10]
 
-    for num1, num2 in zip(arr1, arr2):
-        if num1 != num2:
-            return num1
-    return arr1[-1]
+def missingElement(arr):
+    temp = []
 
-arr3 = [1, 3, 5, 6, 7]
-arr4 = [1, 5, 6, 4, 6, 8]
+    for i in range(max(arr) + 1):
+        if i not in arr:
+            temp.append(i)
+    return temp
+print(missingElement(arr))
 
-print(finder(arr3, arr4))
+res = [x for x in range(max(arr) + 1) if x not in arr]
+
+print(res)
