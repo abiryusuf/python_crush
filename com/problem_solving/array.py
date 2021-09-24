@@ -62,7 +62,8 @@ def mergeSortedList(ListA, ListB):
         newList.append(ListB[b])
         b += 1
     return newList
-print(mergeSortedList([1, 2, 4, 7], [4, 5, 6, 8]))
+print("marge")
+print(mergeSortedList([7, 2, 4, 1], [4, 5, 6, 8]))
 
 list_1 = [1, 2, 3, 5]
 list_2 = [1, 2, 5, 9]

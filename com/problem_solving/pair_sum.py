@@ -24,3 +24,9 @@ def pair_sum(array, k):
     print("\n".join(map(str, list(output))))
 
 pair_sum([1, 3, 2, 2, 5, -1], 4)
+
+arr = [2, 4, 6, 8]
+x = 2
+for i in arr:
+    tar = x - i
+    print(tar)

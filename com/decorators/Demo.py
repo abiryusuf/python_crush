@@ -9,13 +9,21 @@ without permanently modifying it.
 def div(a, b):
     print(a/b)
 
-def deco_Div(func):
+# def deco_Div(func):
+#     def inner(a, b):
+#         if a < b:
+#             a, b = b, a
+#         return func(a, b)
+#     return inner
+#
+# div_1 = deco_Div(div)
+#
+# div_1(2, 4)
+
+def div_2(myFun):
     def inner(a, b):
-        if a < b:
-            a, b = b, a
-        return func(a, b)
+        x = a + b
+        return myFun(x)
     return inner
-
-div_1 = deco_Div(div)
-
-div_1(2, 4)
+y = div_2(div)
+div_2(2, 3)

@@ -13,8 +13,12 @@ def reverseInt(num):
     res = []
     size = len(num)
 
-    for i in range(1, size):
-        if i not in res:
-            res = i + res
+    for i in range(size):
+        size -= 1
+        res.append()
+
     return res
 print(reverseInt(str(theList)))
+
+x = theList[::-1]
+print(x)

@@ -1,4 +1,4 @@
-# theList = [3, 3, 5, 6, 6, 6, 7, 7]
+# importxtheList = [3, 3, 5, 6, 6, 6, 7, 7]
 #
 # print(set([x for x in theList if theList.count(x) > 1]))
 #

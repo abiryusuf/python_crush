@@ -14,4 +14,4 @@ def non_repeating(string):
     return None
 # with key and value
 # y = sorted(count.items(), key=lambda x: x[1])
-print(non_repeating(" I am abir"))
+print(non_repeating(" x I am abir"))
