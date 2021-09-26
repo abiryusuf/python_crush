@@ -11,3 +11,13 @@ def swap_case(s):
         x +="".join(y)
     return x
 print(swap_case(s))
+
+def anagram(s):
+
+    s = s.split()
+    x = ""
+    for i in range(len(s)):
+        y = s[i]
+        x += y[0].upper()
+    return x
+print(anagram(s))
