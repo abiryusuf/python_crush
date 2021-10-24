@@ -31,12 +31,16 @@ print("Min number", minNum(num))
 def maxIndex(num):
     maxIndex = 0
     maxNum = 0
+    second = 0
 
     for index, number in enumerate(num):
         if number > maxNum:
             maxIndex = index
             maxNum = number
-    return maxIndex, maxNum
+    for index, number in enumerate(num):
+        if number > second and number != maxNum:
+            second = number
+    return "This is index {} and This is value {}".format(maxIndex -1, second)
 print(maxIndex(num))
 # Dict
 # groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
