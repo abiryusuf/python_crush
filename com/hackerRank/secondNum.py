@@ -33,11 +33,15 @@ print(total(groceries))
 def maxNum(num):
     length = len(num)
     max = num[0]
+    secondLargest = num[0]
 
     for i in num:
         # current = num[i]
         if i > max:
             max = i
-    return max
+    for i in num:
+        if i > secondLargest and i != max:
+            secondLargest = i
+    return secondLargest
 print(maxNum([5, 7, 8]))
 

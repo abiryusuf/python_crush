@@ -40,7 +40,7 @@ def maxIndex(num):
     for index, number in enumerate(num):
         if number > second and number != maxNum:
             second = number
-    return "This is index {} and This is value {}".format(maxIndex -1, second)
+    return "This is 2nd index {} with 2nd value {}".format(maxIndex -1, second)
 print(maxIndex(num))
 # Dict
 # groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}

@@ -25,4 +25,4 @@ def compress(s):
     # put everything back into run
     r = r + s[i - 1] + str(count)
     return r
-print(compress("aabb"))
+print(compress("aaaabbbc"))
