@@ -8,7 +8,7 @@
 # print(id(arr_1))
 # print(id(arr_2))
 #
-# arr_2 = arr_1.copy()
+# arr_2 = arr_1.copy( )
 # arr_2[1] = 6
 # print(arr_1)
 # print(arr_2)

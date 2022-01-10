@@ -1,13 +1,13 @@
 
-def anagram(str1, str2):
-    word = sorted(str1)
-    word1 = sorted(str2)
-    if word == word1:
-        return True
-    else:
-        return False
-
-print(anagram("abcd", "cdab"))
+# def anagram(str1, str2):
+#     word = sorted(str1)
+#     word1 = sorted(str2)
+#     if word == word1:
+#         return True
+#     else:
+#         return False
+#
+# print(anagram("abcd", "cdab"))
 
 # 2nd ways anagrams
 def anagreamsSecound(s1, s2):
